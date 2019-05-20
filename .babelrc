@@ -1,0 +1,17 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "fish",
+        "libraryDirectory": "lib",
+        "style": true
+      }
+    ],
+    ["@babel/plugin-transform-runtime", { "corejs": 2 }],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-transform-object-assign",
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
